@@ -1,0 +1,41 @@
+baseURL               = "https://papergate.top"
+languageCode          = "zh-CN"
+title                 = "PaPErGate"
+theme                 = "WebStack"
+preserveTaxonomyNames = true
+disablePathToLower    = true
+hasCJKLanguage        = true
+publishDir            = "public"					# 站点静态文件保存目录
+
+
+[params]
+    author        = "Aphros"
+    description   = "PaPErGate 网址导航"
+    about         = "https://github.com/aphrosgeng/PaPErGate"	# 左侧导航栏的"关于导航"页面(./about)
+    expandSidebar = false					# 默认展开左侧边导航栏
+    logosPath     = "assets/images/logos"			# 网站每个导航地址logo存放地址
+    defaultLogo   = "assets/images/logos/default.webp"		# logo图片资源不存在或者错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
+    nightMode     = false					# 默认站点为深色(夜间)模式
+
+#[params.seo]
+#    baiduhmid       = 'efccc04cb44fc49faddac5876180b369'	# 百度统计 hm.src 的 ID
+#    baiduSiteVer    = 'codeva-cCAOSG8MBO'			# 百度HTML标签验证(baidu-site-verification)
+#    tj51laid        = ''                        		# 51.LA 网站统计
+#    tj51lack        = ''
+#    GoogleAdsClient = ''					# Google AdSense
+
+
+[params.images]
+    icon           = "assets/images/icon.png"
+    searchImageL      = "assets/images/background.jpg"		# 搜索部分浅色背景图
+    searchImageD      = "assets/images/background_d.jpg"		# 搜索部分深色背景图
+    logoExpandLight   = "assets/images/logo_expand_light.png"
+    logoExpandDark    = "assets/images/logo_expand_dark.png"
+    logoCollapseLight = "assets/images/logo_light.png"
+    logoCollapseDark  = "assets/images/logo_dark.png"
+    
+[markup.goldmark.renderer]
+    unsafe = true
+
+[params.footer]
+    copyright = '本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：aphros.geng@gmail.com<br/>Productivity and Potential Energy rapidly Gather to me!!!'

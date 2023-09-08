@@ -1,0 +1,48 @@
+- item: 首页
+  icon: fa fa-home
+  list:
+    - name: Gitte版
+      url: https://papergate.top
+    - name: Github版
+      url: https://hub.papergate.top
+    - name: Nas版
+      url: http://192.168.0.103:1313
+
+- item: 博客
+  icon: fa fa-book
+  list:
+    - name: Gitte版
+      url: http://blog.papergate.top
+    - name: Github版
+      url: http://blog.hub.papergate.top
+    - name: Nas版
+      url: http://192.168.0.103:1314
+
+
+- item: 邮箱
+  icon: far fa-envelope
+  list:
+    - name: QQ邮箱
+      url: https://mail.qq.com/
+    - name: 163邮箱
+      url: https://mail.163.com/
+    - name: 126邮箱
+      url: https://mail.126.com/
+    - name: 谷歌邮箱
+      url: https://mail.google.com/
+
+- item: 文献
+  icon: fas fa-flask fa-lg
+  list:
+    - name: 知网
+      url: https://www.cnki.net
+    - name: 万方
+      url: http://www.wanfangdata.com.cn
+    - name: 维普
+      url: http://www.cqvip.com
+    - name: EI
+      url: https://www.engineeringvillage.com
+    - name: Web of Science
+      url: http://apps.webofknowledge.com
+    - name: Proquest
+      url: https://www.proquest.com/index

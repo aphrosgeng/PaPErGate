@@ -1,0 +1,122 @@
+- item: 搜索
+  id: search
+  list:
+    - name: 百度搜索
+      id: type-baidu
+      url: https://www.baidu.com/s?wd=
+      placeholder: 百度一下，你就知道
+    - name: 谷歌搜索
+      id: type-google
+      url: https://www.google.com/search?q=
+      placeholder: 谷歌搜索
+    - name: 必应搜索
+      id: type-bing
+      url: https://www.bing.com/search?q=
+      placeholder: 微软 Bing 搜索
+- item: 翻译
+  id: translate
+  list:
+    - name: 百度翻译
+      id: type-baidu-fanyi
+      url: https://fanyi.baidu.com/translate?#en/zh/
+      placeholder: 百度翻译
+    - name: 谷歌翻译
+      id: type-google-translate
+      url: https://translate.google.com/?sl=en&tl=zh-CN&op=translate&text=
+      placeholder: 谷歌翻译
+    - name: 有道翻译
+      id: type-youdao-fanyi
+      url: https://fanyi.youdao.com/indexLLM.html#/?from=auto&i=
+      placeholder: 有道翻译
+- item: 代码
+  id: code
+  list:
+    - name: Github
+      id: type-github
+      url: https://github.com/search?type=repositories&q=
+      placeholder: Github仓库搜索
+    - name: Gitte
+      id: type-gitte
+      url: https://search.gitee.com/?type=repository&q=
+      placeholder: Gitte仓库搜索
+    - name: 语雀
+      id: type-yuque
+      url: https://www.yuque.com/search?type=content&tab=public&q=
+      placeholder: 语雀文章搜索
+    - name: CSDN
+      id: type-csdn
+      url: https://so.csdn.net/so/search?q=
+      placeholder: CSDN文章搜索
+    - name: 书栈网
+      id: type-shuzhan
+      url: https://www.bookstack.cn/search/result?wd=
+      placeholder: 书栈网书籍搜索
+- item: 文章
+  id: article
+  list:
+    - name: 微信
+      id: type-wechat
+      url: https://weixin.sogou.com/weixin?type=2&query=
+      placeholder: 微信公众号文章搜索
+    - name: 知乎
+      id: type-zhihu
+      url: https://www.zhihu.com/search?type=content&q=
+      placeholder: 知乎文章搜索
+    - name: 微博
+      id: type-weibo
+      url: https://s.weibo.com/weibo/?q=
+      placeholder: 微博文章搜索
+    - name: 小红书
+      id: type-xiaohongshu
+      url: https://www.xiaohongshu.com/search_result?keyword=
+      placeholder: 小红书文章搜索
+    - name: 豆瓣
+      id: type-douban
+      url: https://www.douban.com/search?q=
+      placeholder: 豆瓣文章搜索
+    - name: 简书
+      id: type-jianshu
+      url: https://www.jianshu.com/search?q=
+      placeholder: 简书文章搜索
+- item: 视频
+  id: movie
+  list:
+    - name: B站
+      id: type-bilibili
+      url: https://search.bilibili.com/all?keyword=
+      placeholder: B站视频搜索
+    - name: YouTube
+      id: type-youtube
+      url: https://www.youtube.com/results?search_query=
+      placeholder: YouTube视频搜索
+    - name: 动漫花园
+      id: type-dmhy
+      url: https://www.dmhy.org/topics/list?keyword=
+      placeholder: 动漫花园动漫搜索
+- item: 工具
+  id: tools
+  list:
+    - name: 淘宝
+      id: type-taobao
+      url: https://s.taobao.com/search?q=
+      placeholder: 淘宝
+    - name: 京东
+      id: type-jd
+      url: https://search.jd.com/Search?keyword=
+      placeholder: 京东
+    - name: 下厨房
+      id: type-xiachufang
+      url: https://www.xiachufang.com/search/?keyword=
+      placeholder: 下厨房
+    - name: 香哈菜谱
+      id: type-xiangha
+      url: https://www.xiangha.com/so/?q=caipu&s=
+      placeholder: 香哈菜谱
+    - name: 12306
+      id: type-12306
+      url: https://www.12306.cn/?
+      placeholder: 12306
+    - name: 去哪儿
+      id: type-qunar
+      url: https://www.qunar.com/?
+      placeholder: 去哪儿

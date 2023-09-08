@@ -1,0 +1,98 @@
+<div class="main-content flex-fill grid-bg">
+    <div class="big-header-banner">
+        <div id="header" class="page-header sticky">
+            <div class="navbar navbar-expand-md">
+                <div class="container-fluid p-0">
+                    <a href="" class="navbar-brand d-md-none" title="{{ .Site.Title }}">
+                        <img src="{{ relURL $.Site.Params.images.logoCollapseLight }}" class="logo-light"
+                            alt="{{ .Site.Title }}">
+                        <img src="{{ relURL $.Site.Params.images.logoCollapseDark }}" class="logo-dark d-none"
+                            alt="{{ .Site.Title }}">
+                    </a>
+                    <!--左半侧工具栏-->
+                    <div class="collapse navbar-collapse order-2 order-md-1">
+                        <!--侧边栏的伸缩按钮-->
+                        <div class="header-mini-btn">
+                            <label>
+                                <input id="mini-button" type="checkbox">
+                                <svg viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55"></path>
+                                    <path class="line--2" d="M0 50h80"></path>
+                                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45"></path>
+                                </svg>
+                            </label>
+                        </div>
+                        <!--工具栏按钮-->
+                        <ul class="navbar-nav site-menu" style="margin-right: 16px;">
+                            {{ range .Site.Data.left_headers }}
+			                <li {{ if .list }}class="menu-item-has-children"{{ end }}>
+                                {{ if .list }}
+				                <a href="javascript:">
+                                    <i class="{{ .icon }}"></i>
+                                    <span>{{ .item }}</span>
+                                </a>
+                                {{ else }}
+                                    <a href="{{ .url }}" target="_blank">
+                                    <i class="{{ .icon }}"></i>
+                                    <span>{{ .item }}</span>
+                                </a>
+                                {{ end }}
+				                <ul class="sub-menu">
+				                    {{ range .list }}
+				                    <li>
+                                        <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+                                    </li>
+				                    {{ end }}
+				                </ul>
+			                </li>
+			                {{ end }}
+			            </ul>
+                        <!--和风天气API-->
+                        <div class="rounded-circle weather">
+                            <div id="he-plugin-simple"></div>
+                            <script>
+                                WIDGET = {
+                                    "CONFIG": {
+                                        "modules": "01234",
+                                        "background": "5",
+                                        "tmpColor": "FFFFFF",
+                                        "tmpSize": "14",
+                                        "cityColor": "FFFFFF",
+                                        "citySize": "14",
+                                        "aqiColor": "FFFFFF",
+                                        "aqiSize": "14",
+                                        "weatherIconSize": "24",
+                                        "alertIconSize": "18",
+                                        "padding": "10px 10px 10px 10px",
+                                        "shadow": "1",
+                                        "language": "auto",
+                                        "borderRadius": "5",
+                                        "fixed": "false",
+                                        "vertical": "center",
+                                        "horizontal": "left",
+                                        "city": "CN101020100",
+                                        "key": "f72deb35221146118ba4163646e8ab74"
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <!--右半侧工具栏-->
+                        <ul class="nav navbar-menu text-xs order-1 order-md-2">
+                            <!--工具栏搜索按钮-->
+                            <li class="nav-search ml-3 ml-md-4">
+                                <a href="javascript:" data-toggle="modal" data-target="#search-modal"><i
+                                        class="iconfont icon-search icon-2x"></i></a>
+                            </li>
+                            <!--移动端显示侧边栏的伸缩按钮-->
+                            <li class="nav-item d-md-none mobile-menu ml-3 ml-md-4">
+                                <a href="javascript:" id="sidebar-switch" data-toggle="modal"
+                                    data-target="#sidebar"><i class="iconfont icon-classification icon-2x"></i></a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="placeholder" style="height:74px"></div>
+    </div>
+    <!--后面接content_header-->

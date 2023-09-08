@@ -1,0 +1,51 @@
+<div class="header-big  post-top css-color mb-4" id="search-bg" style="">
+    <div class="s-search">
+        <div id="search" class="s-search mx-auto">
+            <!--搜索框上半部分-->
+            <div id="search-list-menu" class="hide-type-list">
+                <div class="s-type text-center">
+                    <div class="s-type-list big">
+                        <!--上半滑动条-->
+                        <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
+                        {{ range .Site.Data.search }}
+                        <label for="{{ range first 1 .list }}{{ .id }}{{ end }}" data-id="{{ .id }}">
+                            <span>{{ .item }}</span>
+                        </label>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://www.baidu.com?s=" method="get" target="_blank" class="super-search-fm">
+                <input type="text" id="search-text" class="form-control smart-tips search-key"
+                       zhannei="" placeholder="" style="outline:0" autocomplete="off">
+                <button class="submit" type="submit">
+                    <i class="iconfont icon-search"></i>
+                </button>
+            </form>
+
+            <div id="search-list" class="hide-type-list">
+                {{ range .Site.Data.search }}
+                <div class="search-group {{ .id }}">
+                    <ul class="search-type">
+                        {{ range .list }}
+                        <li>
+                            <input hidden="" type="radio" name="type"
+                                id="{{ .id }}"
+                                value="{{ .url }}"
+                                data-placeholder="{{ .placeholder }}">
+                            <label for="{{ .id }}">
+                                <span class="text-muted">{{ .name }}</span>
+                            </label>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+            <div class="card search-smart-tips search-hot-text">
+                <ul id="word" style="display: none"></ul>
+            </div>
+        </div>
+    </div>
+</div>
