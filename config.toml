@@ -1,4 +1,6 @@
-baseURL               = "https://papergate.top"
+#baseURL               = "localhost"
+relativeURLs = true
+uglyURLs = true
 languageCode          = "zh-CN"
 title                 = "PaPErGate"
 theme                 = "WebStack"
