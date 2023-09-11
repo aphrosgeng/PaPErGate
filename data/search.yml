@@ -35,10 +35,14 @@
       id: type-github
       url: https://github.com/search?type=repositories&q=
       placeholder: Github仓库搜索
-    - name: Gitte
-      id: type-gitte
+    - name: Gitee
+      id: type-gitee
       url: https://search.gitee.com/?type=repository&q=
-      placeholder: Gitte仓库搜索
+      placeholder: Gitee仓库搜索
+    - name: Gitlab
+      id: type-gitlab
+      url: https://gitlab.com/search?search=
+      placeholder: Gitlab仓库搜索
     - name: 语雀
       id: type-yuque
       url: https://www.yuque.com/search?type=content&tab=public&q=

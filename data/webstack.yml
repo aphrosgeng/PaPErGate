@@ -60,6 +60,18 @@
   list:
     - term: 开源社区
       links:
+        - title: GitHub
+          logo: github.png
+          url: https://github.com/
+          description: 全球最大的开源社区和版本控制平台。
+        - title: Gitee
+          logo: gitee.png
+          url: https://gitee.com/
+          description: 一个轻量级的Git仓库托管服务。
+        - title: GitLab
+          logo: gitlab.png
+          url: https://about.gitlab.com/
+          description: DevOps 平台，提供源代码管理、CI/CD 和协作工具。
         - title: 语雀
           logo: 语雀.png
           url: https://www.yuque.com/dashboard
@@ -68,36 +80,29 @@
           logo: csdn.png
           url: https://www.csdn.net/
           description: 技术发现，连接未来。
-        - title: GitHub
-          logo: github.png
-          url: https://github.com/
-          description: 全球最大的开源社区和版本控制平台。
-        - title: Gitte
-          logo: gitee.png
-          url: https://gitee.com/
-          description: 一个轻量级的Git仓库托管服务。
+
     - term: 云服务器
       links:
         - title: 阿里云
-          logo: 阿里云.jpg
+          logo: 阿里云.png
           url: https://www.aliyun.com/
           description: 上云就上阿里云。
+        - title: 万网
+          logo: 阿里云.png
+          url: https://wanwang.aliyun.com/
+          description: 阿里云旗下的云服务和域名注册平台。
         - title: 腾讯云
-          logo: 腾讯云.jpg
+          logo: 腾讯云.png
           url: https://cloud.tencent.com/
           description: 产业智变，云启未来。
         - title: 华为云
           logo: 华为云.png
           url: https://www.huaweicloud.com/
-          description: 提供云计算服务+智能，见未来-华为云。
-        - title: 云筏科技
-          logo: ''
-          url: https://my.cloudraft.cn/
-          description: 云筏 - 科研云。
-        - title: 青椒云
-          logo: 青椒云.jpg
-          url: https://www.qingjiaocloud.com/
-          description: 云桌面,一站式云电脑服务平台。
+          description: 提供云计算服务和智能技术。
+        - title: CloudFlare
+          logo: CloudFlare.png
+          url: https://www.cloudflare.com/
+          description: 为网站提供安全性、性能和可靠性的全球云服务提供商。
 
 - taxonomy: 休闲娱乐
   icon: fas fa-film fa-lg
@@ -124,6 +129,10 @@
           logo: twitter.png
           url: https://twitter.com/
           description: 分享你的想法和关注你感兴趣的话题。
+        - title: Discord
+          logo: discord.png
+          url: https://discord.com/app/
+          description: 您聊天和闲逛的地方。
     - term: 影音视频
       links:
         - title: 哔哩哔哩
@@ -157,10 +166,6 @@
           logo: 天翼云盘.jpg
           url: https://cloud.189.cn/
           description: 家庭云|网盘|文件备份|资源分享。
-        - title: 坚果云
-          logo: 坚果云.png
-          url: https://www.jianguoyun.com/
-          description: 坚果云官网。
     - term: 图片资源
       links:
         - title: Unsplash
